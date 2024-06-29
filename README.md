@@ -12,3 +12,6 @@ jetson_clocks --fan
 
 #jetson xavier는 aarch로 Miniconda를 설치 권장함
 1. 설치 후 miniconda 실행 : eval "$(/home/pyc/miniforge3/bin/conda shell.bash hook)"
+
+# --apt-fix-broken 오류:
+1.https://unix.stackexchange.com/questions/537546/e-unmet-dependencies-try-apt-fix-broken-install-with-no-packages-or-speci
