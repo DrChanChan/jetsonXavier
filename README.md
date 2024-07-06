@@ -15,3 +15,18 @@ jetson_clocks --fan
 
 # --apt-fix-broken 오류:
 1.https://unix.stackexchange.com/questions/537546/e-unmet-dependencies-try-apt-fix-broken-install-with-no-packages-or-speci
+
+#pytorch 설치 :
+1. https://forums.developer.nvidia.com/t/pytorch-for-jetson/72048
+2. 테스트 코드 :
+import torch
+print("PyTorch version:", torch.__version__)
+print("CUDA version:", torch.version.cuda)
+print("Is CUDA available:", torch.cuda.is_available())
+
+if torch.cuda.is_available():
+    print("Number of GPUs:", torch.cuda.device_count())
+    for i in range(torch.cuda.device_count()):
+        print(f"GPU {i}: {torch.cuda.get_device_name(i)}")
+else:
+    print("CUDA is not available")
