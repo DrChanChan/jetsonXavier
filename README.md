@@ -31,3 +31,4 @@ if torch.cuda.is_available():
         print(f"GPU {i}: {torch.cuda.get_device_name(i)}")
 else:
     print("CUDA is not available")
+4. ultralytics DOCS : https://docs.ultralytics.com/ko/guides/nvidia-jetson/#install-ultralytics-package #이게 더 좋은듯
