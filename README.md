@@ -18,7 +18,8 @@ jetson_clocks --fan
 
 #pytorch 설치 :
 1. https://forums.developer.nvidia.com/t/pytorch-for-jetson/72048
-2. 테스트 코드 :
+2. OpenBLAS 설치 : sudo apt install libopenblas-dev
+3. 테스트 코드 :
 import torch
 print("PyTorch version:", torch.__version__)
 print("CUDA version:", torch.version.cuda)
